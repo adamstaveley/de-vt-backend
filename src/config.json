@@ -1,0 +1,26 @@
+{
+    "port": 8200,
+    "hostname": "localhost",
+    "wordObj": {
+        "word": "",
+        "translation": "",
+        "additionalInfo": "",
+        "retryCount": "",
+        "hintCount": "",
+        "skipped": false
+    },
+    "levelThresholds": {
+        "1": {
+            "min": 1,
+            "max": 5
+        },
+        "2": {
+            "min": 5,
+            "max": 10
+        },
+        "3": {
+            "min": 10,
+            "max": 40
+        }
+    }
+}

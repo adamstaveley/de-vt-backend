@@ -1,13 +1,11 @@
 {
     "port": 8200,
     "hostname": "localhost",
+    "availableLanguages": ["de", "en"],
+    "availableLevels": [1, 2, 3],
     "wordObj": {
         "word": "",
-        "translation": "",
-        "additionalInfo": "",
-        "retryCount": "",
-        "hintCount": "",
-        "skipped": false
+        "translation": ""
     },
     "levelThresholds": {
         "1": {
@@ -22,5 +20,10 @@
             "min": 10,
             "max": 40
         }
-    }
+    },
+    "testOptions": {
+        "method": "GET",
+        "resolveWithFullResponse": true
+    },
+    "isTestEnv": false
 }

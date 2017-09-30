@@ -9,9 +9,11 @@ const host      = `http://${hostname}:${port}/`;
 
 const app = express();
 
-app.get('/:language/:level/word', async (req, res) => {
+app.get('/word/:language/:level', async (req, res) => {
     try {
-        const word = await helper.chooseWord(language, level);
+        const language = req.params.language;
+        const level = parseInt(req.params.level);
+        const word = await helper.chooseWord(language, parseInt(level));
         res.send(word);
     }
     catch(err) {
@@ -19,4 +21,4 @@ app.get('/:language/:level/word', async (req, res) => {
     }
 });
 
-app.listen(config.port, config.hostname, () => console.log('Listening at:', host))
+app.listen(config.port, config.hostname)

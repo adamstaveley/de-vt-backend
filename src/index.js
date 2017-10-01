@@ -10,6 +10,8 @@ const host      = `http://${hostname}:${port}/`;
 const app = express();
 
 app.get('/word/:language/:level', async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+
     try {
         const language = req.params.language;
         const level = parseInt(req.params.level);

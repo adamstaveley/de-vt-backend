@@ -38,14 +38,4 @@ describe('API usage', () => {
             done();
         });
     });
-
-    it('should return 404 if POST request', done => {
-        const opt = Object.assign({url: host}, options);
-        opt.method = 'POST';
-        request(opt).catch(err => {
-            assert.equal(err.statusCode, 404);
-            done();
-        })
-    });
-
 })

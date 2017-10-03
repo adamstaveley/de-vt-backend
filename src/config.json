@@ -1,7 +1,6 @@
 {
     "port": 8200,
     "hostname": "localhost",
-	"allowPort": 4201,
     "availableLanguages": ["de", "en"],
     "availableLevels": [1, 2, 3],
     "wordObj": {

@@ -1,5 +1,5 @@
 {
-  "name": "lg-backend",
+  "name": "vt-backend",
   "version": "1.0.0",
   "description": "backend for language game",
   "main": "src/index.js",

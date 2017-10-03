@@ -10,8 +10,7 @@ const host      = `http://${hostname}:${port}/`;
 const app = express();
 
 app.get('/word/:language/:level', async (req, res) => {
-	const allowHost = `http://${hostname}:${config.allowPort}`
-    res.setHeader('Access-Control-Allow-Origin', allowHost);
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     try {
         const language = req.params.language;

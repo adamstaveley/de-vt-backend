@@ -4,6 +4,13 @@ This is the backend component of [de-vocab-tester](https://github.com/adamstavel
 
 Endpoint is at `/word/:language/:level`
 
+Clone and install dependencies:
+```
+git clone git@github.com:adamstaveley/de-vt-backend.git
+cd de-vt-backend
+npm install
+```
+
 Run tests:
 ```
 npm test
